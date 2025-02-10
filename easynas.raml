@@ -1,0 +1,22 @@
+#%RAML 1.0
+title: easynas
+version: v1
+baseUri: https://localhost:8081/api/first
+/first:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "message":"success"
+              }
+      400:
+        body:
+          application/json:
+            example:
+              {
+                "message":"failed"
+              }
+          
